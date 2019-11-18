@@ -12,12 +12,9 @@ note3 = Number(prompt("Entrer votre note des laboratoires "));
 
 
 //Étape 3 : Les calculs
-noteFinal = 
-montantTotal = total1 + total2 + total3;
-tps = montantTotal * 0.05;
-tvq = montantTotal * 0.0998;
-grandTotal = montantTotal + tps + tvq;
+noteFinal = (note1 * 30) / 100 + (note2 * 20) / 100 + (note3 * 50) / 100;
+
 //Étape 4 : AFFICHE les résultats
-alert("La date de la facture est le " + date + "," + " le montant avant taxes est de : " + montantTotal + "$ cad " + ","  + " la taxe TPS est de : " + tps + "$ cad" + " et la TVQ : " + tvq + "$ cad" + "." + " Le montant total est de " + grandTotal + "$ CAD");
+alert("Votre note final est de : " + noteFinal + "%");
 
 
