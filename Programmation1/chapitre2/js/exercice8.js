@@ -4,12 +4,18 @@
 
 var salaire;
 var taux;
-var nbHeuresTravaillees;
+var tauxSupp;
+var nbHeuresTravaillees = '40';
 
 nbHeuresTravaillees = Number(prompt("Nombre d'heures travaillees : "));
 taux = Number(prompt("Taux horaire? : "));
 
-
+tauxSupp = (taux * 2);
 salaire = nbHeuresTravaillees * taux;
 
-alert("Le salaire est " + salaire);
+if(nbHeuresTravaillees <= '40'){
+    alert("Le salaire est " + salaire);
+}
+else if (nbHeuresTravaillees >= '40'){
+    alert("Le salaire est " + (salaire + taux *2));
+}

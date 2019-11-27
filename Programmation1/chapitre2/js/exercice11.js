@@ -4,23 +4,23 @@
 // Ajouter 's' et 'd'.
 // Si c'est autre chose, écrire un message d'erreur.
 
-var lettre
+var lettre;
 
-lettre = Number(prompt("Entrer une lettre "));
+lettre = prompt("Entrer une lettre : ");
 
-
-if(lettre === w){
+if(lettre.toUpperCase() === "W"){
     alert('Avancer');
 }
-else if(lettre === a){
+else if(lettre.toUpperCase() === "A"){
     alert('Gauche');
 }
-else if(lettre ===){
-    alert('C');
+else if(lettre.toUpperCase() === "S"){
+    alert('Reculer');
 }
-else if(nbre => 60 && nbre >= 69){
-    alert('D');
+else if(lettre.toUpperCase() === "D"){
+    alert('Droite');
 }
-else if(nbre < 60){
-    alert('E');
+else{
+    alert('ERREUR');
 }
+
