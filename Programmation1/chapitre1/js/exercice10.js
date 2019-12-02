@@ -1,13 +1,26 @@
-var a;
-var b;
-var c;
+var date;
+var total1;
+var total2;
+var total3;
+var montantTotal;
+var tps;
+var tvq;
+var grandTotal;
 
-a = prompt("Entrez la valeur de A");
-b = prompt("Entrez la valeur de B");
+//Étape 2 : Lecture (demander à l'usager des données)
+date = prompt("Entrer la date ");
+total1 = Number(prompt("Entrer le montant de votre article "));
+total2 = Number(prompt("Entrer le montant de votre article "));
+total3 = Number(prompt("Entrer le montant de votre article "));
 
-//Utilisez la variable C ICI pour que ça fonctionne  et modifiez une des deux lignes suivantes
-a = b;
-b = a;
 
-alert("A vaut maintenant " + a);
-alert("B vaut maintenant " + b);
+
+//Étape 3 : Les calculs
+montantTotal = total1 + total2 + total3;
+tps = montantTotal * 0.05;
+tvq = montantTotal * 0.0998;
+grandTotal = montantTotal + tps + tvq;
+//Étape 4 : AFFICHE les résultats
+alert("La date de la facture est le " + date + "," + " le montant avant taxes est de : " + montantTotal + "$ cad " + ","  + " la taxe TPS est de : " + tps + "$ cad" + " et la TVQ : " + tvq + "$ cad" + "." + " Le montant total est de " + grandTotal + "$ CAD");
+
+

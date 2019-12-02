@@ -1,20 +1,14 @@
-//Faites un programme qui lit le nom d'un article et son prix de détail.
-//Votre programme doit afficher le prix de gros 66% du prix de détail ainsi
-//que le profit attendu.
+//Programmer un convertisseur Degré Celsius -> Fharenheit.
 
 //Étape 1 : trouver les variables
-
-var nomArticle;
-var prixDetail;
-var prixGros;
+var degreCelsius;
+var fharenheit;
 
 //Étape 2 : Lecture (demander à l'usager des données)
-nomArticle = prompt("Entrer nom de l'article ");
-prixDetail = Number(prompt("Entrer le prix "));
-
+degreCelsius = Number(prompt("Veuillez entrer le degré celsius : "));
 
 //Étape 3 : Les calculs
-prixGros = (prixDetail * 1.66) - prixDetail;
+fharenheit = degreCelsius * 1.8 + 32;
 
 //Étape 4 : AFFICHE les résultats
-alert("Le prix de gros est de " + prixGros + "$" + " et vous avez économiser " + (prixDetail - prixGros));
+console.log("La température est de " + fharenheit + " fharenheit");

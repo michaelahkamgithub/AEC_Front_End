@@ -1,18 +1,21 @@
 /**
  * Created by Shany on 2019-10-24.
  */
-var nom;
+//Lire un nombre et afficher le carré et le cube de ce nombre.
 
-//Opération de lecture (input / entrée)
-//L'usager va nous donner le nom
-nom = prompt("Entrez votre nom svp : ");
-//Shift+2
-//Shift-droite + .
-//shift-droite + à côté du L """""""""""
+//Étape 1 : trouver les variables
+var nombre;
+var carre;
+var cube;
 
+//Étape 2 : Lecture (demander à l'usager des données)
+nombre = Number(prompt("Veuillez entrer un nombre svp : "));
 
-//Opération d'affichage (sortie / output / écrire)
-console.log("Hello Input/Output");
-console.log(nom);
-console.log("Bonjour " + nom);
+//Étape 3 : Les calculs
+carre = nombre * nombre;
+cube = nombre * nombre * nombre;
 
+//Étape 4 : AFFICHE les résultats
+console.log("Le nombre est " + nombre);
+console.log("Le carré est : " + carre);
+console.log("Le cube est : " +  cube);

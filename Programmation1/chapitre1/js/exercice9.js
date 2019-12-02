@@ -1,14 +1,13 @@
-//Programmer un convertisseur Fharenheit -> Degré Celsius.
+var a;
+var b;
+var c;
 
-//Étape 1 : trouver les variables
-var fharenheit;
-var degreCelsius;
+a = prompt("Entrez la valeur de A");
+b = prompt("Entrez la valeur de B");
 
-//Étape 2 : Lecture (demander à l'usager des données)
-fharenheit = Number(prompt("Veuillez entrer le degré en fharenheit : "));
+//Utilisez la variable C ICI pour que ça fonctionne  et modifiez une des deux lignes suivantes
+a = b;
+b = a;
 
-//Étape 3 : Les calculs
-degreCelsius = (fharenheit - 32) * 5/9;
-
-//Étape 4 : AFFICHE les résultats
-console.log("La température est de " + degreCelsius + " degrés Celsius");
+alert("A vaut maintenant " + a);
+alert("B vaut maintenant " + b);

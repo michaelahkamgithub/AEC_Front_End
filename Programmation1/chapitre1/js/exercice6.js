@@ -1,18 +1,20 @@
-//Lire le nom et l’âge d’un individu, puis convertir son âge en jours (approximatif).
-// Imprimer un message incluant son nom pour l’informer du nombre de jours vécus.
+//Faites un programme qui lit le nom d'un article et son prix de détail.
+//Votre programme doit afficher le prix de gros 66% du prix de détail ainsi
+//que le profit attendu.
 
 //Étape 1 : trouver les variables
-var nom;
-var age;
-var nbJoursVecus;
+
+var nomArticle;
+var prixDetail;
+var prixGros;
 
 //Étape 2 : Lecture (demander à l'usager des données)
-nom = prompt("Entrer votre nom : ");
-age = Number(prompt("Entrer votre age : "));
+nomArticle = prompt("Entrer nom de l'article ");
+prixDetail = Number(prompt("Entrer le prix "));
 
 
 //Étape 3 : Les calculs
-nbJoursVecus = age * 365;
+prixGros = (prixDetail * 1.66) - prixDetail;
 
 //Étape 4 : AFFICHE les résultats
-console.log("Le nombre de jours vécus est " + nbJoursVecus);
+alert("Le prix de gros est de " + prixGros + "$" + " et vous avez économiser " + (prixDetail - prixGros));

@@ -1,21 +1,20 @@
-/**
- * Created by Shany on 2019-10-24.
- */
-//Lire un nombre et afficher le carré et le cube de ce nombre.
+//Calculer la surface d’un rectangle dont la longueur et la largeur sont lues à l’écran.
 
 //Étape 1 : trouver les variables
-var nombre;
-var carre;
-var cube;
+var longueur;
+var largeur;
+var surface;
+
 
 //Étape 2 : Lecture (demander à l'usager des données)
-nombre = Number(prompt("Veuillez entrer un nombre svp : "));
+longueur = Number(prompt("Veuillez entrer la longueur svp : "));
+largeur = Number(prompt("Veuillez entrer la largeur svp : "));
+
 
 //Étape 3 : Les calculs
-carre = nombre * nombre;
-cube = nombre * nombre * nombre;
+surface = longueur * largeur;
 
 //Étape 4 : AFFICHE les résultats
-console.log("Le nombre est " + nombre);
-console.log("Le carré est : " + carre);
-console.log("Le cube est : " +  cube);
+console.log("La longueur du rectangle est " + longueur);
+console.log("La largeur est : " + largeur);
+console.log("La surface du rectangle est : " + surface);

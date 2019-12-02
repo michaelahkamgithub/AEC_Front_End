@@ -1,26 +1,26 @@
-var date;
-var total1;
-var total2;
-var total3;
-var montantTotal;
-var tps;
-var tvq;
-var grandTotal;
+var nomEtudiant;
+var note1;
+var note2;
+var note3;
+var noteFinal;
+
 
 //Étape 2 : Lecture (demander à l'usager des données)
-date = prompt("Entrer la date ");
-total1 = Number(prompt("Entrer le montant de votre article "));
-total2 = Number(prompt("Entrer le montant de votre article "));
-total3 = Number(prompt("Entrer le montant de votre article "));
+nomEtudiant = prompt("Entrer votre nom");
+note1 = Number(prompt("Entrer votre note de mi-session (compte pour 30%) "));
+note2 = Number(prompt("Entrer votre note de l'examen final (compte pour 50%) "));
+note3 = Number(prompt("Entrer votre note des laboratoires (compte pour 20%) "));
 
 
 
 //Étape 3 : Les calculs
-montantTotal = total1 + total2 + total3;
-tps = montantTotal * 0.05;
-tvq = montantTotal * 0.0998;
-grandTotal = montantTotal + tps + tvq;
+noteFinal = (note1 * 30) / 100 + (note2 * 20) / 100 + (note3 * 50) / 100;
+
 //Étape 4 : AFFICHE les résultats
-alert("La date de la facture est le " + date + "," + " le montant avant taxes est de : " + montantTotal + "$ cad " + ","  + " la taxe TPS est de : " + tps + "$ cad" + " et la TVQ : " + tvq + "$ cad" + "." + " Le montant total est de " + grandTotal + "$ CAD");
+alert("Nom de l'étudiant : " + nomEtudiant);
+alert("Votre note de mi-session qui compte pour 30% est de : " + note1 + " sur 100");
+alert("Votre note de l'examen final qui compte pour 50% est de : " + note2 + " sur 100");
+alert("Votre note des laboratoires qui compte pour 20% est de : " + note3 + " sur 100");
+alert("Votre note final est de : " + noteFinal + "%");
 
 

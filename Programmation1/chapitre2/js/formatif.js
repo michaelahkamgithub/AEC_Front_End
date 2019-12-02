@@ -68,3 +68,34 @@ else{
 */
 
 
+//Question 6
+
+
+var controleur;
+var moteur;
+var cameraUsb;
+var matriceLeds;
+var prixControleur;
+var prixfilament = 20;
+var prixbatterie = 15;
+
+
+
+controleur = prompt("Sélectionner votre contrôleur entre un RaspBerry Pi ou un Raspberry Pi Zero?");
+moteur = Number(prompt("Entrez le nombre de moteurs (entre 2 et 24)"));
+cameraUsb = prompt("Voulez-vous une camera USB ? OUI ou NON");
+matriceLeds = prompt("Voulez-vous une matrice de LEDS ? OUI ou NON");
+
+if(controleur.toUpperCase() === "RaspBerry Pi"){
+    prixControleur = 55;
+}
+    else if(controleur.toUpperCase() === "Raspberry Pi Zero"){
+    prixControleur = 15;
+}
+
+if(moteur.toUpperCase())
+
+
+
+
+
