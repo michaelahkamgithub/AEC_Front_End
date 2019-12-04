@@ -2,22 +2,56 @@
 // Offrez trois choix de couleurs de fond et de texte à l'utilisateur
 // Affichez une ligne de texte de la couleur de fond et de texte choisis par l'utilisateur
 
-var couleur;
+var couleurFond;
+var couleurTexte;
+var texte;
 
+couleurFond =  prompt("Entrez la couleur de fond (rouge bleu vert)");
+couleurTexte = prompt("Entrez la couleur du texte (blanc noir gris");
+texte = prompt("Entrez le texte que vous voulez écrire : ");
 
-
-couleur = prompt("Veuillez choisir un des 3 couleurs suivantes : Bleu, Jaune ou Rouge");
-
-if(couleur.toUpperCase() === "BLEU"){
-    document.write("<h1 class='Bleu'>Ceci est un exemple de couleur bleu</h1>");
+if(couleurFond === "rouge"){
+    if (couleurTexte === "blanc"){
+        console.log("%c " + texte, 'background: #FF0000; color: #ffffff');
+    }
+    else if (couleurTexte === "noir"){
+        console.log("%c " + texte, 'background: #FF0000; color: #000000');
+    }
+    else if (couleurTexte === "gris"){
+        console.log("%c " + texte, 'background: #FF0000; color: #666666');
+    }
+    else{
+        console.log("VOus n'avez pas entré les couleurs correctement");
+    }
 }
-else if(couleur.toUpperCase() === "ROUGE"){
-    document.write("<h1 class='Rouge'>Ceci est un exemple de couleur Rouge</h1>");
+else if(couleurFond === "bleu"){
+    if (couleurTexte === "blanc"){
+        console.log("%c " + texte, 'background: #0000FF; color: #ffffff');
+    }
+    else if (couleurTexte === "noir"){
+        console.log("%c " + texte, 'background: #0000FF; color: #000000');
+    }
+    else if (couleurTexte === "gris"){
+        console.log("%c " + texte, 'background: #0000FF; color: #666666');
+    }
+    else{
+        console.log("VOus n'avez pas entré les couleurs correctement");
+    }
 }
-
-else if(couleur.toUpperCase() === "JAUNE"){
-    document.write("<h1 class='Jaune'>Ceci est un exemple de couleur Jaune</h1>");
+else if(couleurFond === "vert"){
+    if (couleurTexte === "blanc"){
+        console.log("%c " + texte, 'background: #00FF00; color: #ffffff');
+    }
+    else if (couleurTexte === "noir"){
+        console.log("%c " + texte, 'background: #00FF00; color: #000000');
+    }
+    else if (couleurTexte === "gris"){
+        console.log("%c " + texte, 'background: #00FF00; color: #666666');
+    }
+    else{
+        console.log("VOus n'avez pas entré les couleurs correctement");
+    }
 }
 else{
-    document.write("<h1>La couleur n'existe pas</h1>");
+    console.log("VOus n'avez pas entré les couleurs correctement");
 }
