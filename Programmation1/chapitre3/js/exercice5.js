@@ -13,5 +13,5 @@ for(var i=0; i<100; i++){
         nbDe1++;
     }
 }
-    document.write("Il y a eu : " + nbDe0 + "zeros <br>");
-    document.write("Il y a eu : " + nbDe1 + "uns <br>");
+    document.write("Il y a eu : " + nbDe0 + " zeros <br>");
+    document.write("Il y a eu : " + nbDe1 + " uns <br>");
